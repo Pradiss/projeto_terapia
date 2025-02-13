@@ -1,0 +1,128 @@
+[[header]]
+
+<main>
+    
+    <section id="servicos" class="servicos">
+        <div class="services__info d-flex flex-column justify-content-center align-items-center">
+            <h4>Bem vindo ao Terapia Integrativa</h4>
+            <h2 class="subtitle d-flex justify-content-center my-2">Serviços</h2>
+            <p class="my-2">Fazemos parceria com você ao longo de sua jornada de saúde; afastando-se da dor e
+                fazendo com que
+                você volte a fazer as coisas que ama.</p>
+        </div>
+        <div class="row">
+            [[servicos]]
+
+        </div>
+    </section>
+
+    <section id="profissionais" class="profissionais">
+        <div class="container">
+
+            <div class="services__info d-flex flex-column justify-content-center align-items-center">
+                <h4>Nossos profissionais</h4>
+                <h2 class="subtitle d-flex justify-content-center my-2">Profissionais</h2>
+                <p class="my-2"></p>
+            </div>
+
+            <div class="row">
+                <div class="d-flex justify-content-between">
+
+                    <div class="cardss-pro col-md-6 col-sm-12 px-2">
+                        <div class="img-professional">
+                            <img src="[[base-url]]/views/templates/assets/profi01.jpg" class="img-fluid">
+                            <h3>Escolha seu profissional</h3>
+                            <p class="">Conheça nossa equipe dedicada de profissionais</p>
+                            <a href="[[base-url]]/profissionais">
+                            <button type="button" class="btn-login" >Conheça nosso time <i
+                                    class="bi bi-arrow-right"></i></button></a>
+                        </div>
+                    </div>
+
+                    <div class="cardss-pro col-md-6 col-sm-12 px-2">
+                        <div class="img-professional">
+                            <img src="[[base-url]]/views/templates/assets/profi02.jpg" class="img-fluid">
+                            <h3>Escolha uma especialidade</h3>
+                            <p>Conheça todas as nossas especialidades</p>
+                            <a href="[[base-url]]/servicos">
+                            <button type="button" class="btn-login" src="">Conheça nossas especialidades <i
+                                    class="bi bi-arrow-right"></i></button></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="services__info d-flex flex-column justify-content-center align-items-center">
+            <h4>Bem vindo ao Terapia Integrativa</h4>
+            <h2 class="subtitle d-flex justify-content-center my-2">Sobre Nós</h2>
+            <p class="my-2">Fazemos parceria com você ao longo de sua jornada de saúde; afastando-se da dor e
+                fazendo com que
+                você volte a fazer as coisas que ama.</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="about-left col-md-6 col-sm-12">
+                    <h2 class="card-text-title">Nossa História</h2>
+                    <p class="card-text">Nossa História Temos orgulho de ser parte integrante da comunidade que
+                        servimos. Por meio de programas de extensão, seminários de educação em saúde e parcerias com
+                        organizações locais, buscamos promover uma comunidade mais saudável e fornecer recursos para
+                        os necessitados.</p>
+                    <div class="row">
+                        <div class="col-6 d-none d-lg-block"><img src="[[base-url]]/views/templates/assets/about-4.webp"></div>
+                        <div class="col-6 d-none d-lg-block"><img src="[[base-url]]/views/templates/assets/about-5.webp"></div>
+                    </div>
+                </div>
+                <div class="about-right col-md-6 col-sm-12">
+                    <img src="[[base-url]]/views/templates/assets/about-3.webp">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+
+            <div class="services__info d-flex flex-column justify-content-center align-items-center">
+                <h4>Contato</h4>
+                <h2 class="subtitle d-flex justify-content-center my-2">Venha nos Visitar</h2>
+                <p class="">Fazemos parceria com você ao longo de sua jornada de saúde; afastando-se da dor e
+                    fazendo com que você volte a fazer as coisas que ama.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <form action="process_contact.php" method="POST" class="d-flex flex-column ">
+
+                        <input class="contato footer-subscribe my-2" type="text" id="name" name="name"
+                            spellcheck="false" placeholder="Nome" required>
+
+                        <input class="contato footer-subscribe my-2" type="email" id="email" name="email"
+                            spellcheck="false" placeholder="Email" required>
+
+                        <textarea class="contato contato-area my-2" id="message" name="message" spellcheck="false"
+                            rows="6" placeholder="Mensagem" required></textarea>
+
+                        <button class="btn-login my-4" type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="map d-flex justify-content-center my-5">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.317702257775!2d-47.40150102378768!3d-22.567217925825307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c880ee0caac24d%3A0x95fcf7d5914d4d50!2sSenac%20Limeira!5e0!3m2!1spt-BR!2sbr!4v1719529298636!5m2!1spt-BR!2sbr"
+                            width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+[[footer]]
