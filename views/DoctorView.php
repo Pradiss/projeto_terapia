@@ -17,8 +17,12 @@ $card = "";
         </div>
         <div class='col-md-8 p-5'>
           <div class='card-body'>
-          <h4 class='card-text text-body-dark'>$especialidade</h4>
+          <h4 class='card-text text-secondary'>$especialidade</h4>
             <h1 class='card-title text-dark'>$nome</h1>
+
+            <ul>
+                <li>whatsApp</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -55,7 +59,7 @@ $card = "";
                     <input type='time' id='horario'  name='horario' class='form-control p-3 contato rounded-5 ' placeholder='horas'>
 
                 </div>
-                <button type='submit' id='btnAcessar' name='btnAcessar' class=' btn-login w-100 fw-bold text-white btn btn-lg btn-dark'>Cadastrar-se</button>
+                <button type='submit' id='btnAcessar' name='btnAcessar' class=' btn-login w-100 fw-bold text-white btn btn-lg btn-dark'>Agende sua consulta</button>
             </div>
           </div>
                <input type='hidden' name='acao' value='<?= ?>'>
@@ -75,7 +79,7 @@ $card = "";
                     <div class='card-body rounded '>
                       <div class='row'>
                           <div class='col-sm-3'>
-                            <h6 class='mb-0'>Nome</h6>
+                            <h6 class='mb-0'></h6>
                           </div>
                           <div class='  col-sm-9 text-secondary'>
                             $nome
@@ -84,6 +88,7 @@ $card = "";
                       <hr>
                     </div>
                   </div>
+                  
 
                 </div>
 

@@ -113,11 +113,12 @@ h6 {
     box-shadow: 0 2px 2px 0 var(--ligther-color);
   }
 }
+
 .btn-perfil {
   color: var(--ligth2);
   background-color: var(--main-color);
   padding: 12px 20px;
-  border-radius: 16px;
+  border-radius: 32px;
   font-weight: 700;
   &:hover {
     background-color: var(--darker-color);
@@ -125,7 +126,6 @@ h6 {
     box-shadow: 0 2px 2px 0 var(--ligther-color);
   }
 }
-
 .nav__ul li a {
   color: var(--ligth4);
   position: relative;
@@ -280,8 +280,9 @@ h6 {
     margin: var(--mgcards);
     animation: slide 12s linear infinite;
 
+   
     & .card-body {
-      padding: 2rem;
+      /* padding: 2rem; */
       max-width: 24rem;
       cursor: pointer;
       color: var(--ligth4);
@@ -292,10 +293,10 @@ h6 {
         font-family: "Fahkwang", sans-serif;
         font-size: 2rem;
         font-weight: 700;
-        color: var(--subtle-color);
+        color: var(--sucsses-color);
       }
       & .card-text {
-        color: var(--subtle-color);
+        color: var(--ligth2);
         white-space: wrap;
         font-size: 1.125rem;
         font-weight: 500;
@@ -310,7 +311,7 @@ h6 {
       }
     }
 
-    &.massagem {
+    /* &.massagem {
       background-image: url("https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     }
     &.meditacao {
@@ -324,7 +325,7 @@ h6 {
     }
     &.acumputura {
       background-image: url("https://img.freepik.com/fotos-gratis/terapeuta-de-close-up-fazendo-acupuntura_23-2148815317.jpg?semt=ais_hybrid");
-    }
+    } */
   }
 }
 
