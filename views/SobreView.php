@@ -3,7 +3,7 @@
 
 <?php 
 
-$header = file_get_contents("views/templates/html/header.html");
+$header = file_get_contents("views/templates/html/header.php");
 $footer = file_get_contents("views/templates/html/footer.html");
 $html = file_get_contents("views/templates/html/sobre.html");
 

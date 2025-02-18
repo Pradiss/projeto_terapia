@@ -10,6 +10,12 @@ $card = "";
     $image = $card_terapia["image"];
 
     $card= "
+    <div class='services__info d-flex flex-column justify-content-center align-items-center'>
+            <h2 class='subtitle d-flex justify-content-center my-2'>$nome</h2>
+            <p class='my-2'>Fazemos parceria com você ao longo de sua jornada de saúde; afastando-se da dor e
+                fazendo com que
+                você volte a fazer as coisas que ama.</p>
+        </div>
     <div class='row gutters-sm'>
               <div class='col-sm-12 col-md-4 mb-3'>
                 <div class='card '>
@@ -52,7 +58,7 @@ $card = "";
 
 
 
-$header = file_get_contents("views/templates/html/header.html");
+$header = file_get_contents("views/templates/html/headerAdm.html");
 $footer = file_get_contents("views/templates/html/footer.html");
 $html = file_get_contents("views/templates/html/terapia.html");
 

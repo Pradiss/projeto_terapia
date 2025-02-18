@@ -10,7 +10,15 @@ $card = "";
     $image = $card_profissional["image"];
 
     $card= "
-    <div class='card rounded-5 mb-3' '>
+
+    <div class='services__info d-flex flex-column justify-content-center align-items-center'>
+            <h2 class='subtitle d-flex justify-content-center my-2'>$nome</h2>
+            <p class='my-2'>Fazemos parceria com você ao longo de sua jornada de saúde; afastando-se da dor e
+                fazendo com que
+                você volte a fazer as coisas que ama.</p>
+        </div>
+        
+    <div class='card rounded-5 mb-3' >
       <div class='row g-0'>
         <div class='col-md-4'>
           <img src='$image' class='img rounded-start' alt='...'>
@@ -19,10 +27,37 @@ $card = "";
           <div class='card-body'>
           <h4 class='card-text text-secondary'>$especialidade</h4>
             <h1 class='card-title text-dark'>$nome</h1>
-
+          <div class='py-4'>
             <ul>
-                <li>whatsApp</li>
-            </ul>
+                <li class='my-3'><h2 class='text-secondary'>Telefone: (19) 98080-8800</h2></li>
+                <hr>
+                <li><h2 class='text-secondary'>WhatsApp: (19) 98080-8800</h2></li>
+                <hr>
+
+                <li><h2 class='text-secondary'>Email: Lorem.ispsum@gmail.com</h2></li>
+               <hr>
+
+              </ul>
+          </div>
+          <div class='social-links'>
+                <ul>
+                    <li class='social__link d-flex align-items-center justify-content-center'>
+                        <a href='' title='Instagram'>
+                            <i class='icon instagram bi bi-instagram'></i>
+                        </a>
+                    </li>
+                    <li class='social__link d-flex align-items-center justify-content-center'>
+                        <a href='' title='Linkedin'>
+                            <i class='icon linkedin bi bi-linkedin'></i>
+                        </a>
+                    </li>
+                    <li class='social__link d-flex align-items-center justify-content-center'>
+                        <a href='#' title='X'>
+                            <i class='icon bi bi-facebook'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -66,23 +101,17 @@ $card = "";
                
             </form>
                   
-                </div>
-              
-
-                <div class='card mt-3 text-ligh contato p-3 '>
-                    
-                   
-                </div>
+                
 
                <div class='col-md-8 '>
-                  <div class='card text-dark contato p-3'>
-                    <div class='card-body rounded '>
-                      <div class='row'>
-                          <div class='col-sm-3'>
-                            <h6 class='mb-0'></h6>
+                  <div class='card contato p-3'>
+                    <div class='card-body rounded-5'>
+                      <div class='row text-dark'>
+                          <div class='col-sm-4'>
+                            <h3 class='mb-0'>Biografia $nome</h3>
                           </div>
-                          <div class='  col-sm-9 text-secondary'>
-                            $nome
+                          <div class='  col-sm-9 '>
+                            <h1>$nome </h1>
                           </div>
                       </div>
                       <hr>
@@ -106,7 +135,7 @@ $card = "";
 
 
 
-$header = file_get_contents("views/templates/html/header.html");
+$header = file_get_contents("views/templates/html/headerAdm.html");
 $footer = file_get_contents("views/templates/html/footer.html");
 $html = file_get_contents("views/templates/html/doctor.html");
 
