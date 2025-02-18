@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18/02/2025 às 01:30
+-- Tempo de geração: 18/02/2025 às 02:05
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -31,17 +31,21 @@ CREATE TABLE `profissionais` (
   `id` int(11) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `especialidade` varchar(255) DEFAULT NULL,
-  `image` varchar(400) NOT NULL
+  `image` varchar(400) NOT NULL,
+  `descricao` varchar(400) DEFAULT NULL,
+  `telefone` varchar(50) NOT NULL,
+  `email` text NOT NULL,
+  `whatsapp` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `profissionais`
 --
 
-INSERT INTO `profissionais` (`id`, `nome`, `especialidade`, `image`) VALUES
-(1, 'Helena', 'Acumputura', 'https://img.freepik.com/fotos-premium/adsasd_129180-3386.jpg?ga=GA1.1.345808142.1738189526&semt=ais_hybrid'),
-(2, 'Valesca ', 'Massagem', 'https://img.freepik.com/free-photo/front-view-woman-working-spa_23-2150911764.jpg?uid=R165984995&ga=GA1.1.345808142.1738189526&semt=ais_hybrid'),
-(3, 'Marcos', 'Pilates', 'https://img.freepik.com/free-photo/before-workout-bearded-man-holdinga-mat-workout_259150-57017.jpg?uid=R165984995&ga=GA1.1.345808142.1738189526&semt=ais_hybrid');
+INSERT INTO `profissionais` (`id`, `nome`, `especialidade`, `image`, `descricao`, `telefone`, `email`, `whatsapp`) VALUES
+(1, 'Helena', 'Acumputura', 'https://img.freepik.com/fotos-premium/adsasd_129180-3386.jpg?ga=GA1.1.345808142.1738189526&semt=ais_hybrid', 'Gosto de conhecer meus pacientes e construir relacionamentos significativos. Entendo que cada pessoa é única e que tem origens culturais diversas, então me esforço para ouvi-los ativamente e capacitá-los para serem defensores dos objetivos de saúde e bem-estar que são importantes para eles. Estou dedicado a fornecer cuidados compassivos e individualizados, fornecendo educação ao paciente e pratica', '(19) 93034-1133', 'Helena@gmail.com', '(19) 98913-0934'),
+(2, 'Valesca ', 'Massagem', 'https://img.freepik.com/free-photo/front-view-woman-working-spa_23-2150911764.jpg?uid=R165984995&ga=GA1.1.345808142.1738189526&semt=ais_hybrid', 'Ela arrumou suas sete versalias, colocou sua inicial no cinto e seguiu seu caminho. Quando chegou às primeiras colinas das Montanhas Itálicas, ela teve uma última visão de volta do horizonte de sua cidade natal, Bookmarksgrove, a manchete de Alphabet Village e a sublinha de sua própria estrada, a Line Lane.\n\nMuito, muito longe, atrás das montanhas das palavras, longe dos países Vokalia e Consonant', '(12) 93330-3023', 'valesca@gmail.com', '(12) 97789-1857'),
+(3, 'Marcos', 'Pilates', 'https://img.freepik.com/free-photo/before-workout-bearded-man-holdinga-mat-workout_259150-57017.jpg?uid=R165984995&ga=GA1.1.345808142.1738189526&semt=ais_hybrid', 'Gosto de conhecer meus pacientes e construir relacionamentos significativos. Entendo que cada pessoa é única e que tem origens culturais diversas, então me esforço para ouvi-los ativamente e capacitá-los para serem defensores dos objetivos de saúde e bem-estar que são importantes para eles. Estou dedicado a fornecer cuidados compassivos e individualizados, fornecendo educação ao paciente e pratica', '(11) 93344-0223', 'Marquinhos@hotmail.com', '(11) 98322-1133');
 
 -- --------------------------------------------------------
 

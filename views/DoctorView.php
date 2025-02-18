@@ -8,6 +8,10 @@ $card = "";
     $nome = $card_profissional["nome"];
     $especialidade = $card_profissional["especialidade"];
     $image = $card_profissional["image"];
+    $descricao = $card_profissional["descricao"];
+    $email = $card_profissional["email"];
+    $telefone = $card_profissional["telefone"];
+    $whatsapp = $card_profissional["whatsapp"];
 
     $card= "
 
@@ -18,23 +22,23 @@ $card = "";
                 você volte a fazer as coisas que ama.</p>
         </div>
         
-    <div class='card rounded-5 mb-3' >
-      <div class='row g-0'>
-        <div class='col-md-4'>
-          <img src='$image' class='img rounded-start' alt='...'>
+    <div class='card rounded-5 mb-5' >
+      <div class='row rounded-5 '>
+        <div class='col-md-4  '>
+          <img src='$image' class='img-fluid py-3' alt='...' style='border-radius:1.25rem;important'>
         </div>
-        <div class='col-md-8 p-5'>
+        <div class='col-md-8 d-flex align-items-center'>
           <div class='card-body'>
           <h4 class='card-text text-secondary'>$especialidade</h4>
             <h1 class='card-title text-dark'>$nome</h1>
           <div class='py-4'>
             <ul>
-                <li class='my-3'><h2 class='text-secondary'>Telefone: (19) 98080-8800</h2></li>
+                <li class='my-3'><h2 class='text-secondary'>Telefone: $telefone</h2></li>
                 <hr>
-                <li><h2 class='text-secondary'>WhatsApp: (19) 98080-8800</h2></li>
+                <li><h2 class='text-secondary'>WhatsApp: $whatsapp</h2></li>
                 <hr>
 
-                <li><h2 class='text-secondary'>Email: Lorem.ispsum@gmail.com</h2></li>
+                <li><h2 class='text-secondary'>Email: $email </h2></li>
                <hr>
 
               </ul>
@@ -94,7 +98,7 @@ $card = "";
                     <input type='time' id='horario'  name='horario' class='form-control p-3 contato rounded-5 ' placeholder='horas'>
 
                 </div>
-                <button type='submit' id='btnAcessar' name='btnAcessar' class=' btn-login w-100 fw-bold text-white btn btn-lg btn-dark'>Agende sua consulta</button>
+                <button type='submit' id='btnAcessar' name='btnAcessar' class=' btn-login w-100 fw-bold text-white '>Agende sua consulta</button>
             </div>
           </div>
                <input type='hidden' name='acao' value='<?= ?>'>
@@ -104,23 +108,22 @@ $card = "";
                 
 
                <div class='col-md-8 '>
-                  <div class='card contato p-3'>
+                  <div class='card contato  p-3'>
                     <div class='card-body rounded-5'>
-                      <div class='row text-dark'>
-                          <div class='col-sm-4'>
-                            <h3 class='mb-0'>Biografia $nome</h3>
+                      <div class='row text-black'>
+                          <div class='col-sm-4 '>
+                            <h3 class='mb-4 text-dark'>Curta Biografia</h3>
                           </div>
-                          <div class='  col-sm-9 '>
-                            <h1>$nome </h1>
+                          <hr>
+                          <div class='p-3'>
+                          <p>$descricao </div>
                           </div>
-                      </div>
-                      <hr>
                     </div>
                   </div>
                   
 
                 </div>
-
+              
               </div>
             </div>
     <section> 
